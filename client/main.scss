@@ -1,0 +1,8 @@
+@import '../imports/ui/module/header.scss';
+
+$red: red;
+.test{
+  span{
+    color:$red;
+  }
+}
