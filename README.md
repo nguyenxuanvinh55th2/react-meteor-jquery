@@ -22,3 +22,9 @@ Cấu trúc cây thư mục project:
         --sounds: chứa file âm thanh
 --server: folder server của meteor
 --stylesheets: chứa tất cả các file css, scss
+
+run project:
+step1: open comman line: git clone 
+step2: cd folder project: meteor npm install
+step3: meteor
+step4: open browser: localhost: 3000
