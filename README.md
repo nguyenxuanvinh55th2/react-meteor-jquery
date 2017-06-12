@@ -1,4 +1,4 @@
-# react-meteor-jquery
+# react-meteor-jquery (/public/imgs show all structure folders)
 Cấu trúc cây thư mục project:
 --client: chứa các file cần thiết cho cấu hinh client, redux, apollo (config start client meteor)
 --collections: chứa khai báo các bảng trong mongodb (Code back-end)
