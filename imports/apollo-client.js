@@ -1,4 +1,3 @@
-import ApolloClient,{createNetworkInterface} from 'apollo-client';
-import { meteorClientConfig } from 'meteor/apollo';
+import ApolloClient from 'apollo-client';
 
-export const client =  new ApolloClient(meteorClientConfig());
+export const client =  new ApolloClient();

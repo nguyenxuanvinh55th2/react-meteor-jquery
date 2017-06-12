@@ -1,10 +1,8 @@
 import rootReducer from './reducers';
-import { createStore, applyMiddleware} from 'redux';
-
-import createHistory from 'history/createBrowserHistory';
-import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux';
-export const history = createHistory();
-const middleware = routerMiddleware(history);
+import { createStore, applyMiddleware, compose} from 'redux';
+import {routerReducer, syncHistoryWithStore} from 'react-router-redux';
+import { browserHistory} from 'react-router';
+import thunk from 'redux-thunk';
 const defaultState = {
   users: {}
 }
@@ -12,7 +10,10 @@ const defaultState = {
 const store = createStore(
   rootReducer,
   defaultState,
-  applyMiddleware(middleware),
-  window.devToolsExtension ? window.devToolsExtension() : f => f
+  applyMiddleware(thunk),
+  compose(
+      window.devToolsExtension ? window.devToolsExtension(): f => f
+  )
 );
+export const history = syncHistoryWithStore(browserHistory, store);
 export default store;
