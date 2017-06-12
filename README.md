@@ -20,4 +20,5 @@ Cấu trúc cây thư mục project:
         --fonts: chứa các fonts của project
         --imgs: chứa file ảnh, icon
         --sounds: chứa file âm thanh
---server: folder server của meteor 
+--server: folder server của meteor
+--stylesheets: chứa tất cả các file css, scss
