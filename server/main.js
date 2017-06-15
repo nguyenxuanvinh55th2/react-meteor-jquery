@@ -1,6 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 
+import '../collections/tasks.js';
+
 import express from 'express';
 import cors from 'cors';
 

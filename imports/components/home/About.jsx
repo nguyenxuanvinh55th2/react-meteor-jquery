@@ -4,9 +4,11 @@ export default class About extends React.Component {
     super(props);
   }
   render(){
+    console.log(this.props);
     return (
       <div>
         About
+        { this.props.users.name ? 'hvae name' : 'ss'}
       </div>
     )
   }

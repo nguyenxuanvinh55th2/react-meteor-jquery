@@ -10,7 +10,6 @@ const defaultState = {
 const store = createStore(
   rootReducer,
   defaultState,
-  applyMiddleware(thunk),
   compose(
       window.devToolsExtension ? window.devToolsExtension(): f => f
   )
